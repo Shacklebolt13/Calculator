@@ -22,10 +22,8 @@ public class App {
   public static void main(String[] args) throws Exception {
     App app = new App();
     app.parseAllModules();
+
     app.loop();
-    System.out.println(
-      "Welcome to Calculator: Select from the following modes"
-    );
   }
 
   private void parseAllModules()
@@ -55,6 +53,9 @@ public class App {
   private void loop() {
     while (true) {
       // print all the modules
+      System.out.println(
+        "Welcome to Calculator: Select from the following modes"
+      );
       this.printAllModules();
       // get input
       Number choice;
@@ -72,7 +73,7 @@ public class App {
         System.out.println(method.invoke(null).toString());
       } catch (Exception e) {
         e.printStackTrace();
-        break;
+        return;
       }
     }
   }

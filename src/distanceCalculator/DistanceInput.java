@@ -37,7 +37,7 @@ public class DistanceInput implements Input {
           )
         );
       } catch (IllegalArgumentException e) {
-        logger.warning("Invalid unit");
+        System.err.println("Invalid unit");
         i--;
       }
     }

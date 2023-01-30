@@ -56,8 +56,23 @@ public class DistanceValue {
     return new DistanceValue(convertedDistance, to);
   }
 
+  public static String getSmallRepr(DistanceUnit unit) {
+    switch (unit) {
+      case METRE:
+        return "m";
+      case KILOMETRE:
+        return "km";
+      case CENTIMETRE:
+        return "cm";
+      case MILLIMETRE:
+        return "mm";
+      default:
+        return null;
+    }
+  }
+
   @Override
   public String toString() {
-    return this.distance + "" + this.is;
+    return this.distance + "" + getSmallRepr(this.is);
   }
 }

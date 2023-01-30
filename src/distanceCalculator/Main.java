@@ -4,6 +4,7 @@ import calculatorBase.BaseResult;
 import calculatorBase.InputManager;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Main extends calculatorBase.Main {
@@ -38,7 +39,7 @@ public class Main extends calculatorBase.Main {
   }
 
   private static BaseResult<DistanceValue> perform(CalculatorMode mode) {
-    logger.info("" + mode);
+    logger.log(Level.FINE, "" + mode);
     DistanceInput input = new DistanceInput();
     input.take_input();
     DistanceUnit unit = getUnit();
@@ -57,7 +58,7 @@ public class Main extends calculatorBase.Main {
       try {
         unit = DistanceInput.stringToUnit(inp);
       } catch (IllegalArgumentException e) {
-        logger.warning("Invalid unit");
+        System.err.println("Invalid unit");
       }
     }
     return unit;

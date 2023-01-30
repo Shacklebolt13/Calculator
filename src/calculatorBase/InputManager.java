@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 public class InputManager {
 
   public static String take_input(Logger logger, String message) {
-    logger.info(message);
+    System.out.println(message);
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
     // scanner.close();
@@ -20,7 +20,7 @@ public class InputManager {
     try {
       input = Double.parseDouble(inp);
     } catch (NumberFormatException e) {
-      logger.warning("Invalid input");
+      System.err.println("Invalid input");
       input = take_input_number(logger, message);
     }
     return input;

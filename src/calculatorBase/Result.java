@@ -16,7 +16,6 @@ public abstract class Result<TypeOfResult> {
 
   @Override
   public String toString() {
-    System.out.println('reached --- ');
     String str = "";
     for (BaseResult<TypeOfResult> result : results) {
       str += result.toString() + " ";

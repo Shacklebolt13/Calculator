@@ -34,13 +34,13 @@ public class DistanceCalculator implements Calculable<DistanceValue> {
         result = new DistanceValue(res, DistanceUnit.METRE);
         break;
       case CONVERT:
-        result = this.inputs.getDistances()[0].convert(this.unit);
+        result = this.inputs.getDistances()[0];
         break;
       case MULTIPLY:
         res = 1;
         for (DistanceValue value : this.inputs.getDistances()) {
           res =
-            res.doubleValue() +
+            res.doubleValue() *
             value.convert(DistanceUnit.METRE).getDistance().doubleValue();
         }
         result = new DistanceValue(res, DistanceUnit.METRE);
@@ -48,6 +48,6 @@ public class DistanceCalculator implements Calculable<DistanceValue> {
       default:
         break;
     }
-    return new BaseResult<DistanceValue>(result);
+    return new BaseResult<DistanceValue>(result.convert(this.unit));
   }
 }
