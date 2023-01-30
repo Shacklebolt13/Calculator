@@ -11,4 +11,9 @@ public class BaseResult<TypeOfResult> {
   public BaseResult(TypeOfResult result) {
     this.result = result;
   }
+
+  @Override
+  public String toString() {
+    return result.toString();
+  }
 }
