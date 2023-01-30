@@ -55,4 +55,9 @@ public class DistanceValue {
     }
     return new DistanceValue(convertedDistance, to);
   }
+
+  @Override
+  public String toString() {
+    return this.distance + "" + this.is;
+  }
 }

@@ -69,7 +69,7 @@ public class App {
       String methodName = methodNames.get(choice.intValue() - 1);
       Method method = methodMap.get(methodName);
       try {
-        method.invoke(null);
+        System.out.println(method.invoke(null));
       } catch (Exception e) {
         e.printStackTrace();
         break;

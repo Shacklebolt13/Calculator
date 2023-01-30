@@ -9,7 +9,7 @@ public class InputManager {
     logger.info(message);
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
-    scanner.close();
+    // scanner.close();
     return input;
   }
 

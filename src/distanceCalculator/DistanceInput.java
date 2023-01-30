@@ -41,6 +41,7 @@ public class DistanceInput implements Input {
         i--;
       }
     }
+    this.distances = arr.toArray(new DistanceValue[arr.size()]);
   }
 
   public static DistanceUnit stringToUnit(String input)
