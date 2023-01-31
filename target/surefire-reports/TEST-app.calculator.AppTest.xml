@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="app.calculator.AppTest" time="0.12" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="d:\New folder (2)\JavaProject\Calculator\target\test-classes;d:\New folder (2)\JavaProject\Calculator\target\classes;C:\Users\gagandeep.bhambrah\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\gagandeep.bhambrah\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\java\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\GAGAND~1.BHA\AppData\Local\Temp\surefire3850012588122536431\surefirebooter1821069206895815940.jar C:\Users\gagandeep.bhambrah\AppData\Local\Temp\surefire3850012588122536431 2023-01-31T17-59-11_798-jvmRun1 surefire4973138872775339411tmp surefire_01233900041740312555tmp"/>
+    <property name="surefire.test.class.path" value="d:\New folder (2)\JavaProject\Calculator\target\test-classes;d:\New folder (2)\JavaProject\Calculator\target\classes;C:\Users\gagandeep.bhambrah\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\gagandeep.bhambrah\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\gagandeep.bhambrah"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\java\jre"/>
+    <property name="basedir" value="d:\New folder (2)\JavaProject\Calculator"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\GAGAND~1.BHA\AppData\Local\Temp\surefire3850012588122536431\surefirebooter1821069206895815940.jar"/>
+    <property name="sun.boot.class.path" value="C:\java\jre\lib\resources.jar;C:\java\jre\lib\rt.jar;C:\java\jre\lib\sunrsasign.jar;C:\java\jre\lib\jsse.jar;C:\java\jre\lib\jce.jar;C:\java\jre\lib\charsets.jar;C:\java\jre\lib\jfr.jar;C:\java\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-342-b07"/>
+    <property name="user.name" value="gagandeep.bhambrah"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\java\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\gagandeep.bhambrah\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\GAGAND~1.BHA\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_342-342"/>
+    <property name="user.dir" value="d:\New folder (2)\JavaProject\Calculator"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\java\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Python\Python38\;C:\node;C:\java\bin;D:\ideaIU-2022.2.win\bin;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Python\Python310\;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Python\Launcher\;C:\Users\gagandeep.bhambrah\AppData\Local\Microsoft\WindowsApps;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gagandeep.bhambrah\AppData\Local\Programs\Git\cmd;C:\maven3.8.6\bin;C:\ant\bin;C:\vlc;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="OpenLogic-OpenJDK"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="C:\java\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="app.calculator.AppTest" time="0.004"/>
+</testsuite>
