@@ -1,7 +1,7 @@
-package distanceCalculator;
+package distanceCalculator.models;
 
-import calculatorBase.Input;
 import calculatorBase.InputManager;
+import calculatorBase.models.Input;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Logger;

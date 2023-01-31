@@ -1,13 +1,18 @@
-package distanceCalculator;
+package distanceCalculator.connector;
 
-import calculatorBase.BaseResult;
 import calculatorBase.InputManager;
+import calculatorBase.models.ResultUnit;
+import distanceCalculator.controller.DistanceCalculator;
+import distanceCalculator.models.CalculatorMode;
+import distanceCalculator.models.DistanceInput;
+import distanceCalculator.models.DistanceUnit;
+import distanceCalculator.models.DistanceValue;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Main extends calculatorBase.Main {
+public class Main extends calculatorBase.connector.Main {
 
   static Logger logger = Logger.getLogger(Main.class.getName());
 
@@ -26,19 +31,19 @@ public class Main extends calculatorBase.Main {
     return methods;
   }
 
-  public static BaseResult<DistanceValue> add() {
+  public static ResultUnit<DistanceValue> add() {
     return perform(CalculatorMode.ADD);
   }
 
-  public static BaseResult<DistanceValue> multiply() {
+  public static ResultUnit<DistanceValue> multiply() {
     return perform(CalculatorMode.MULTIPLY);
   }
 
-  public static BaseResult<DistanceValue> convert() {
+  public static ResultUnit<DistanceValue> convert() {
     return perform(CalculatorMode.CONVERT);
   }
 
-  private static BaseResult<DistanceValue> perform(CalculatorMode mode) {
+  private static ResultUnit<DistanceValue> perform(CalculatorMode mode) {
     logger.log(Level.FINE, "" + mode);
     DistanceInput input = new DistanceInput();
     input.take_input();

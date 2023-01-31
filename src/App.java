@@ -1,5 +1,5 @@
 import calculatorBase.InputManager;
-import calculatorBase.Main;
+import calculatorBase.connector.Main;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +15,10 @@ public class App {
   private static ArrayList<String> methodNames = new ArrayList<>();
 
   static {
-    moduleMap.put("Distance Calculator", distanceCalculator.Main.class);
+    moduleMap.put(
+      "Distance Calculator",
+      distanceCalculator.connector.Main.class
+    );
     //add more modules here
   }
 

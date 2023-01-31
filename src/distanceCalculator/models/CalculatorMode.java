@@ -1,4 +1,4 @@
-package distanceCalculator;
+package distanceCalculator.models;
 
 public enum CalculatorMode {
   ADD,

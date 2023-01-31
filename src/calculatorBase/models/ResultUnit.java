@@ -1,6 +1,6 @@
-package calculatorBase;
+package calculatorBase.models;
 
-public class BaseResult<TypeOfResult> {
+public class ResultUnit<TypeOfResult> {
 
   private TypeOfResult result;
 
@@ -8,7 +8,7 @@ public class BaseResult<TypeOfResult> {
     return result;
   }
 
-  public BaseResult(TypeOfResult result) {
+  public ResultUnit(TypeOfResult result) {
     this.result = result;
   }
 

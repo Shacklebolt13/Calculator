@@ -1,9 +1,13 @@
-package distanceCalculator;
+package distanceCalculator.controller;
 
-import calculatorBase.BaseResult;
-import calculatorBase.Calculable;
+import calculatorBase.controller.CalculatorBase;
+import calculatorBase.models.ResultUnit;
+import distanceCalculator.models.CalculatorMode;
+import distanceCalculator.models.DistanceInput;
+import distanceCalculator.models.DistanceUnit;
+import distanceCalculator.models.DistanceValue;
 
-public class DistanceCalculator implements Calculable<DistanceValue> {
+public class DistanceCalculator implements CalculatorBase<DistanceValue> {
 
   CalculatorMode workingMode;
   DistanceInput inputs;
@@ -20,7 +24,7 @@ public class DistanceCalculator implements Calculable<DistanceValue> {
   }
 
   @Override
-  public BaseResult<DistanceValue> getResult() {
+  public ResultUnit<DistanceValue> getResult() {
     DistanceValue result = null;
     Number res = 0;
     switch (this.workingMode) {
@@ -48,6 +52,6 @@ public class DistanceCalculator implements Calculable<DistanceValue> {
       default:
         break;
     }
-    return new BaseResult<DistanceValue>(result.convert(this.unit));
+    return new ResultUnit<DistanceValue>(result.convert(this.unit));
   }
 }

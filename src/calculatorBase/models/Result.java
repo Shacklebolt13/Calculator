@@ -1,15 +1,15 @@
-package calculatorBase;
+package calculatorBase.models;
 
 public abstract class Result<TypeOfResult> {
 
-  private BaseResult<TypeOfResult>[] results;
+  private ResultUnit<TypeOfResult>[] results;
 
-  public BaseResult<TypeOfResult>[] getResults() {
+  public ResultUnit<TypeOfResult>[] getResults() {
     return results;
   }
 
   public void showResults() {
-    for (BaseResult<TypeOfResult> result : results) {
+    for (ResultUnit<TypeOfResult> result : results) {
       System.out.println(result);
     }
   }
@@ -17,7 +17,7 @@ public abstract class Result<TypeOfResult> {
   @Override
   public String toString() {
     String str = "";
-    for (BaseResult<TypeOfResult> result : results) {
+    for (ResultUnit<TypeOfResult> result : results) {
       str += result.toString() + " ";
     }
     return str;

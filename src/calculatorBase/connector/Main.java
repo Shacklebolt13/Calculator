@@ -1,4 +1,4 @@
-package calculatorBase;
+package calculatorBase.connector;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

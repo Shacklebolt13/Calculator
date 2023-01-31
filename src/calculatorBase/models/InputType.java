@@ -1,4 +1,4 @@
-package calculatorBase;
+package calculatorBase.models;
 
 enum InputType {
   STRING,
